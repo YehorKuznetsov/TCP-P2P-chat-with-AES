@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>TCP_P2P</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DotNetEnv" Version="3.1.1" />
+    </ItemGroup>
+    <Target Name="KillRunningInstance" BeforeTargets="Build">
+        <Exec Command="taskkill /F /IM &quot;TCP P2P.exe&quot;" ContinueOnError="true" />
+    </Target>
+
+</Project>

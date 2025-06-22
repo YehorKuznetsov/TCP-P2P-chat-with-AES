@@ -1,0 +1,7 @@
+﻿bin/
+obj/
+.vs/
+*.user
+*.log
+chatlog.txt
+.env
